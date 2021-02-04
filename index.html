@@ -12,47 +12,49 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="pin-generator half-width">
-                    <input class="form-control" type="text">
-                    <button class="generate-btn">Generate Pin</button>
+                    <input class="form-control" type="text" id="generatedPinDisplay">
+                    <button class="generate-btn" id="generatePinButton">Generate Pin</button>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="input-section half-width">
-                    <input class="form-control" type="text">
+                    <input class="form-control" type="text" id="inputDisplay">
                     <div class="numbers">
                         <div class="calc-body">
                             <div class="calc-button-row">
-                              <div class="button">7</div>
-                              <div class="button">8</div>
-                              <div class="button">9</div>
+                              <div class="button" id="button-7">7</div>
+                              <div class="button" id="button-8">8</div>
+                              <div class="button" id="button-9">9</div>
                             </div>
                             <div class="calc-button-row">
-                              <div class="button">4</div>
-                              <div class="button">5</div>
-                              <div class="button">6</div>
+                              <div class="button" id="button-4">4</div>
+                              <div class="button" id="button-5">5</div>
+                              <div class="button" id="button-6">6</div>
                             </div>
                             <div class="calc-button-row">
-                              <div class="button">1</div>
-                              <div class="button">2</div>
-                              <div class="button">3</div>
+                              <div class="button" id="button-1">1</div>
+                              <div class="button" id="button-2">2</div>
+                              <div class="button" id="button-3">3</div>
                             </div>
                             <div class="calc-button-row">
-                                <div class="button"><</div>
-                                <div class="button">0</div>
-                                <div class="button">C</div>
+                                <div class="button" id="button-<"><</div>
+                                <div class="button" id="button-0">0</div>
+                                <div class="button" id="button-C">C</div>
                             </div>
                             <div>
-                                <button type="submit" class="submit-btn">Submit</button>
-                                <p class="action-left">3 try left</p>
+                                <button type="submit" class="submit-btn" id="submitButton" value='1'>Submit</button>
+                                <p class="action-left" id="trialsLeft"><span id="remainingTrialsNumber">3</span> trials left</p>
                             </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="notify-section">
-            <p class="notify">❌ Pin Didn't Match, Please try again</p>
-            <p class="notify">✅ Pin Matched... Secret door is opening for you</p>
+            <p class="notify" id="pinNotMatchedNotification">❌ Pin Didn't Match, Please try again</p>
+            <p class="notify" id="pinMathcedNotification">✅ Pin Matched... Secret door is opening for you</p>
         </div>
     </div>
+
+    <script src="functionality.js"></script>
 </body>
 </html>

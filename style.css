@@ -104,3 +104,8 @@ color: #E0B612;
     color: #FF3C5F;
     margin-top: 10px;
 }
+.form-control{
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 10px;
+}
